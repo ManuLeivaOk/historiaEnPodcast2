@@ -1,107 +1,102 @@
-:root {
-  --max-width: 1100px;
-  --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
-    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
-    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
-
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-
-  --primary-glow: conic-gradient(
-    from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
-    transparent 360deg
-  );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
-
-  --tile-start-rgb: 239, 245, 249;
-  --tile-end-rgb: 228, 232, 233;
-  --tile-border: conic-gradient(
-    #00000080,
-    #00000040,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
-  );
-
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
-  --card-rgb: 180, 185, 188;
-  --card-border-rgb: 131, 134, 135;
+.hero {
+  background-image: url("/background-hero.webp");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding: 300px 20px;
+  text-align: center;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
-
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
-
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
+@media (max-width: 768px) {
+  .hero {
+    background-position: 10% center;
   }
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
+.transparent-menubar {
+  padding: 0px !important;
+  border-radius: 0;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+footer {
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* PRESENTACION */
+.presentation-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.presentation-card {
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+
+.custom-card {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+.custom-panel {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+.custom-button {
+  border-color: #f4b400;
+  color: #f4b400;
+}
+
+.custom-button:hover {
+  background-color: #f4b400;
+  border-color: #f4b400;
+  color: #ffffff;
+}
+
+.presentation-divider {
+  display: flex;
+  align-items: center;
+}
+
+.custom-divider {
+  border-left: 2px solid #f4b400;
+  height: 100%;
+}
+
+.custom-divider-horizontal {
+  border-top: 2px solid #f4b400;
+}
+
+.custom-panel-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.custom-avatar {
+  border: 2px solid #f4b400;
+}
+
+.custom-panel-title {
   margin: 0;
+  color: #333;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.width-input{
+width: 285px;
 }
