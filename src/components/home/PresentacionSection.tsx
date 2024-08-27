@@ -5,7 +5,7 @@ import { Divider } from "primereact/divider";
 import { Panel } from "primereact/panel";
 import { Avatar } from "primereact/avatar";
 
-const CustomPanelHeader = ({ title, imageSrc }) => {
+const CustomPanelHeader = ({ title, imageSrc }: any) => {
   return (
     <div className="custom-panel-header">
       <Avatar
