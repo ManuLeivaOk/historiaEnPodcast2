@@ -21,7 +21,7 @@ const CustomPanelHeader = ({ title, imageSrc }) => {
 
 const PresentacionSection = () => {
   return (
-    <div className="presentation-container flex-column md:flex-row justify-content-center align-items-center	">
+    <div className="presentation-container flex-column md:flex-row justify-content-center align-items-center py-8">
       {/* Card del Podcast */}
       <div className="presentation-card">
         <Card
