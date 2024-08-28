@@ -38,9 +38,8 @@ footer {
   background-color: #f9f9f9;
 }
 
-.bgGray{
+.bgGray {
   background-color: #f9f9f9;
-
 }
 
 .presentation-card {
@@ -102,6 +101,25 @@ footer {
   color: #333;
 }
 
-.width-input{
-width: 285px;
+.width-input {
+  width: 285px;
+}
+
+.height-to-hero {
+  height: 700px !important;
+}
+
+.image-hero {
+  object-fit: cover;
+  object-position: 40% top;
+}
+
+.tienda-card {
+  height: 433px;
+}
+
+.h-image-book {
+  height: 170px;
+  object-fit: cover;
+  object-position: 40% top;
 }

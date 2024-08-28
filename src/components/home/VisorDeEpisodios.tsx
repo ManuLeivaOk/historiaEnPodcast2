@@ -3,10 +3,8 @@
 import React, { useState } from "react";
 import { Button } from "primereact/button";
 import { DataView, DataViewLayoutOptions } from "primereact/dataview";
-import { Rating } from "primereact/rating";
 import { Tag } from "primereact/tag";
 import { classNames } from "primereact/utils";
-import { warn } from "console";
 
 export default function VisorDeEpisodios() {
   const [products, setProducts] = useState([
@@ -102,7 +100,7 @@ export default function VisorDeEpisodios() {
     );
   };
 
-  const gridItem = (product) => {
+  const gridItem = (product: any) => {
     return (
       <div className="col-12 sm:col-6 lg:col-4 p-2" key={product.id}>
         <div className="p-4 border-1 surface-border surface-card border-round">
@@ -152,7 +150,9 @@ export default function VisorDeEpisodios() {
   const header = () => {
     return (
       <div className="flex align-items-center justify-content-end">
-        <h3 className="mr-5 text-2xl">Contenidos más recientes</h3>
+        <h3 className="mr-4 md:mr-5 text-xl md:text-2xl">
+          Contenidos más recientes
+        </h3>
         <DataViewLayoutOptions
           layout={layout}
           onChange={(e) => setLayout(e.value as "grid" | "list")}
@@ -162,13 +162,13 @@ export default function VisorDeEpisodios() {
   };
 
   return (
-    <div className="card md:p-8 bgGray">
+    <div className="card py-8 md:px-8 bgGray">
       <DataView
         value={products}
         layout={layout}
         itemTemplate={itemTemplate}
         header={header()}
-        className="mx-8"
+        className="md:mx-8"
       />
     </div>
   );

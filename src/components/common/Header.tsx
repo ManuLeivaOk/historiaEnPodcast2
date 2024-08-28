@@ -7,6 +7,7 @@ const Header = () => {
     {
       label: "Tienda",
       icon: "pi pi-fw pi-images",
+      /* command: () => scrollToSection("location"), */
     },
     {
       label: "Academia",

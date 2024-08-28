@@ -37,10 +37,7 @@ const PresentacionSection = () => {
             Dictados por el Profesor y Licenciado en Historia Lucas Botta, desde
             Córdoba (Arg.)
           </p>
-          <Button
-            label="Escuchar Podcast"
-            className="p-button-rounded p-button-outlined custom-button"
-          />
+          <Button label="Escuchar Podcast" />
         </Card>
       </div>
 
@@ -50,7 +47,7 @@ const PresentacionSection = () => {
       </div>
 
       <div className="presentation-divider block md:hidden">
-        <Divider className="custom-divider-horizontal"/>
+        <Divider className="custom-divider-horizontal" />
       </div>
 
       {/* Card de Información Personal */}
@@ -73,10 +70,7 @@ const PresentacionSection = () => {
             Actualmente es docente en Nivel Secundario, director de Historia en
             Podcast y escritor de Editorial Planeta.
           </p>
-          <Button
-            label="Leer más"
-            className="p-button-rounded p-button-outlined custom-button"
-          />
+          <Button label="Leer más" />
         </Panel>
       </div>
     </div>

@@ -15,12 +15,14 @@ const BuscadorDeEpisodios = () => {
           Ahora podés buscar tus episodios muy fácilmente aquí:
         </div>
         <div>
-          <InputText value={value} onChange={(e) => setValue(e.target.value)} placeholder="Buscá por nombre o palabra clave" className="width-input"/>
+          <InputText
+            value={value}
+            onChange={(e) => setValue(e.target.value)}
+            placeholder="Buscá por nombre o palabra clave"
+            className="width-input"
+          />
         </div>
-        <Button
-          label="Buscar"
-          className="font-bold px-5 py-3 p-button-raised p-button-rounded white-space-nowrap mt-3"
-        />
+        <Button label="Buscar" className="mt-3" />
       </div>
     </div>
   );
