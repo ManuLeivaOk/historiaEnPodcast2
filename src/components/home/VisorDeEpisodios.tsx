@@ -38,14 +38,32 @@ export default function VisorDeEpisodios() {
       inventoryStatus: "OUTOFSTOCK",
     },
     {
-        id: 4,
-        name: "Episodio 4",
-        category: "Radio",
-        price: "20.00",
-        image: "/ESTAF.webp",
-        rating: 3,
-        inventoryStatus: "OUTOFSTOCK",
-      },
+      id: 4,
+      name: "Episodio 4",
+      category: "Radio",
+      price: "20.00",
+      image: "/ESTAF.webp",
+      rating: 3,
+      inventoryStatus: "OUTOFSTOCK",
+    },
+    {
+      id: 5,
+      name: "Episodio 4",
+      category: "Radio",
+      price: "20.00",
+      image: "/ESTAF.webp",
+      rating: 3,
+      inventoryStatus: "OUTOFSTOCK",
+    },
+    {
+      id: 6,
+      name: "Episodio 4",
+      category: "Radio",
+      price: "20.00",
+      image: "/ESTAF.webp",
+      rating: 3,
+      inventoryStatus: "OUTOFSTOCK",
+    },
   ]);
   const [layout, setLayout] = useState<"grid" | "list">("grid");
 
@@ -102,10 +120,10 @@ export default function VisorDeEpisodios() {
           </div>
 
           <div className="flex align-items-center justify-content-between">
-          <div className="flex align-items-center gap-2">
-                <i className="pi pi-hashtag"></i>
-                <span className="font-semibold">{product.category}</span>
-              </div>
+            <div className="flex align-items-center gap-2">
+              <i className="pi pi-hashtag"></i>
+              <span className="font-semibold">{product.category}</span>
+            </div>
             <Button icon="pi pi-link" className="p-button-rounded"></Button>
           </div>
         </div>
@@ -113,7 +131,15 @@ export default function VisorDeEpisodios() {
     );
   };
 
-  const itemTemplate = (product) => {
+  const itemTemplate = (product: {
+    id: number;
+    name: string;
+    category: string;
+    price: string;
+    image: string;
+    rating: number;
+    inventoryStatus: string;
+  }) => {
     if (!product) {
       return null;
     }
@@ -123,19 +149,13 @@ export default function VisorDeEpisodios() {
       : gridItem(product);
   };
 
-  const listTemplate = (products) => {
-    return (
-      <div className="grid grid-nogutter">{products.map(itemTemplate)}</div>
-    );
-  };
-
   const header = () => {
     return (
       <div className="flex align-items-center justify-content-end">
         <h3 className="mr-5 text-2xl">Contenidos más recientes</h3>
         <DataViewLayoutOptions
           layout={layout}
-          onChange={(e) => setLayout(e.value)}
+          onChange={(e) => setLayout(e.value as "grid" | "list")}
         />
       </div>
     );
@@ -148,6 +168,7 @@ export default function VisorDeEpisodios() {
         layout={layout}
         itemTemplate={itemTemplate}
         header={header()}
+        className="mx-8"
       />
     </div>
   );
