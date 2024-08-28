@@ -38,6 +38,11 @@ footer {
   background-color: #f9f9f9;
 }
 
+.bgGray{
+  background-color: #f9f9f9;
+
+}
+
 .presentation-card {
   flex: 1 1 300px;
   max-width: 500px;
