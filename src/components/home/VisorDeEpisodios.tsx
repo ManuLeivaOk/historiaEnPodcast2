@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { useState } from "react";
 import { Button } from "primereact/button";
@@ -48,7 +49,7 @@ export default function VisorDeEpisodios() {
   ]);
   const [layout, setLayout] = useState<"grid" | "list">("grid");
 
-  const listItem = (product, index) => {
+  const listItem = (product: any, index: number) => {
     return (
       <div className="col-12" key={product.id}>
         <div
