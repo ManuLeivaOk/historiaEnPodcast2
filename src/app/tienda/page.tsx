@@ -4,6 +4,7 @@ import Libros from "../../components/tienda/Libros";
 import Step from "../../components/tienda/Steps";
 import Amazon from "../../components/tienda/Amazon";
 import Donaciones from "../../components/home/Donaciones";
+import ContactForm from "../../components/home/ContactForm";
 
 const Page = () => {
   return (
@@ -18,6 +19,9 @@ const Page = () => {
       <Libros />
       <Amazon />
       <Donaciones />
+      <div className="bgGray py-8 px-2 md:px-8 flex flex-row justify-content-center">
+        <ContactForm />
+      </div>
     </div>
   );
 };
