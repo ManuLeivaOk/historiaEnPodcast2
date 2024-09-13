@@ -4,10 +4,10 @@ import React from "react";
 const Donaciones = () => {
   return (
     <div className="px-4 md:px-8 py-8 flex flex-column align-items-center">
-      <h3 className="text-900 font-bold text-5xl mb-3 text-center">
+      <h3 className="text-900 font-bold text-3xl md:text-5xl mb-3 text-center">
         Podés ayudar a que el proyecto siga adelante
       </h3>
-      <p className="col-12 md:col-10 xl:col-6 text-lg text-justify line-height-4">
+      <p className="col-12 md:col-10 xl:col-6 text-lg text-justify line-height-3 md:line-height-4">
         Historia en Podcast es un proyecto de divulgación histórica totalmente
         gratuito que podés disfrutar desde cualquier dispositivo, en cualquier
         momento y desde cualquier lugar del mundo. Asimismo nuestro canal está

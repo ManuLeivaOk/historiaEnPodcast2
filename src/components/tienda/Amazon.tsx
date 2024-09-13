@@ -4,7 +4,7 @@ import React from "react";
 const Amazon = () => {
   return (
     <div className="px-4 md:px-8 py-8 bgGray">
-      <p className="text-900 font-bold text-5xl mb-3 text-center">
+      <p className="text-900 font-bold text-3xl md:text-5xl mb-3 text-center">
         Para compras desde el exterior de Argentina, <br /> dirigirse a la
         página oficial de Amazon:
       </p>
@@ -13,7 +13,7 @@ const Amazon = () => {
         target="_blank"
         className="flex justify-content-center"
       >
-        <img src="/amazon.webp" alt="amazon" className="col-2" />
+        <img src="/amazon.webp" alt="amazon" className="col-6 md:col-2" />
       </a>
     </div>
   );
