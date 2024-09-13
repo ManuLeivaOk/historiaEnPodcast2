@@ -1,10 +1,11 @@
+/* eslint-disable @next/next/no-img-element */
 import { Button } from "primereact/button";
 import React from "react";
 
 const Hero = () => {
   return (
     <div className="grid grid-nogutter surface-0 text-800 height-to-hero">
-      <div className="col-12 md:col-5 xl:col-6 p-6 text-center md:text-left flex align-items-center height-to-hero">
+      <div className="col-12 md:col-5 xl:col-4 p-6 text-center md:text-left flex align-items-center height-to-hero">
         <section>
           <span className="block text-6xl font-bold mb-1">
             Historia en Podcast y
@@ -29,7 +30,7 @@ const Hero = () => {
           />
         </section>
       </div>
-      <div className="col-12 md:col-7 xl:col-6 height-to-hero hidden md:block">
+      <div className="col-12 md:col-7 xl:col-8 height-to-hero hidden md:block">
         <img
           src="/lucas.webp"
           alt="hero-1"

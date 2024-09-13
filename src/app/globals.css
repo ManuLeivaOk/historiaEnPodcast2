@@ -123,3 +123,13 @@ footer {
   object-fit: cover;
   object-position: 40% top;
 }
+
+.imageDonation {
+  width: 90px;
+  margin-right: 20px;
+}
+
+.imageDonationPaypal {
+  width: 130px;
+  margin-left: 20px;
+}
