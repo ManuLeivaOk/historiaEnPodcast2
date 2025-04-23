@@ -4,6 +4,7 @@ import VisorDeEpisodios from "@/components/home/VisorDeEpisodios";
 import Hero from "../components/home/Hero";
 import Donaciones from "../components/home/Donaciones";
 import ContactForm from "../components/home/ContactForm";
+import DondeEncontrarnos from "../components/home/DondeEncontrarnos";
 
 export default function Home() {
   return (
